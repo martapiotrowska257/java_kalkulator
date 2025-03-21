@@ -26,7 +26,7 @@ public class CalculatorTest {
 	}
 
 	@Test
-	public void testAddNeg() {
+	public void testAddNegative() {
 		Calculator sut = new Calculator();
 		sut.setState(1);
 		sut.add(-1);
@@ -34,7 +34,7 @@ public class CalculatorTest {
 	}
 
 	@Test
-	public void testMultOneByNeg() {
+	public void testMultiplyOneByNegative() {
 		Calculator sut = new Calculator();
 		sut.setState(1);
 		sut.mult(-1);
@@ -42,7 +42,7 @@ public class CalculatorTest {
 	}
 
 	@Test
-	public void testMultOneByZero() {
+	public void testMultiplyOneByZero() {
 		Calculator sut = new Calculator();
 		sut.setState(1);
 		sut.mult(0);
@@ -50,7 +50,7 @@ public class CalculatorTest {
 	}
 
 	@Test
-	public void testSubOne() {
+	public void testSubtractOne() {
 		Calculator sut = new Calculator();
 		sut.setState(1);
 		sut.sub(1);
@@ -58,7 +58,7 @@ public class CalculatorTest {
 	}
 
 	@Test
-	public void testSubNeg() {
+	public void testSubtractNegative() {
 		Calculator sut = new Calculator();
 		sut.setState(1);
 		sut.sub(-1);
@@ -66,7 +66,7 @@ public class CalculatorTest {
 	}
 
 	@Test
-	public void testDivTenByTwo() {
+	public void testDivideTenByTwo() {
 		Calculator sut = new Calculator();
 		sut.setState(10);
 		sut.div(2);
@@ -74,7 +74,7 @@ public class CalculatorTest {
 	}
 
 	@Test
-	public void testDivTenByNeg() {
+	public void testDivideTenByNegative() {
 		Calculator sut = new Calculator();
 		sut.setState(10);
 		sut.div(-2);
