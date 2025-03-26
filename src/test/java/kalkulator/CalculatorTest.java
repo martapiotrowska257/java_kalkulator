@@ -121,4 +121,29 @@ public class CalculatorTest {
 		sut.div(0);
 		assertTrue("1 / 0 = err", sut.getError());
 	}
+
+	@Test
+	public void testPowerByNegative() {
+		Calculator sut = new Calculator();
+		sut.setState(1);
+		sut.power(-1);
+		assertTrue("1 ^(-1) = err", sut.getError());
+	}
+
+	@Test
+	public void testPowerByZero() {
+		Calculator sut = new Calculator();
+		sut.setState(10);
+		sut.power(0);
+		assertEquals("10 ^(0) = 1", 1, sut.getState());
+	}
+
+	@Test
+	public void testPowerByThree() {
+		Calculator sut = new Calculator();
+		sut.setState(2);
+		sut.power(3);
+		assertEquals("2 ^(3) = 8", 8, sut.getState());
+	}
+
 }
