@@ -34,6 +34,17 @@ public class Calculator {
 		}
 	}
 
+	public void power(int n){ // potęgowanie
+		if (n < 0) {
+			err = true; // nie obsługujemy potęg mniejszych od 0
+		}
+		int result = 1;
+		for (int i = 0; i < n; i++) {
+			result *= state; // podnosimy aktualny stan do potęgi
+		}
+		state = result;
+	}
+
 	// przyciski MS, MR, M+, M-
 	public void saveMem(){ // ustawia pamięć na aktualną wartość
 		memory = state;
